@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --Cwidth:70vw;
+    --Cheight:70vh;
+}
+body {
+    margin: 0;
+    position: relative;
+    background-image: linear-gradient(to bottom, hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background-attachment: fixed;
+
+}
+.container {
+    width: var(--Cwidth);
+    height: 70vh;
+    position: absolute;
+    --leftVal: calc((100vw - var(--Cwidth)) * 0.5);
+    --topVal: calc((100vh - var(--Cheight)) * 0.5);
+    /*it is very important to have space between +- in calc */
+    left:var(--leftVal);
+    top:var(--topVal);
+    background: white;
+}
+.container .image-container, .container .faqs{
+    height: 60vh;
+    width: 50%;
+    float: left;
+    margin-top:1.5rem;
+}
+
