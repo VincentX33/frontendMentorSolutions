@@ -1,13 +1,33 @@
+* {
+    font-size: 16px;
+}
 body {
     margin: 0;
     width: 100%;
+    min-height:99vh ;
     /* background-color: linear-gradient( 180deg,#af67e9, #6666e8); */
-    background-color:linear-gradient(to bottom,#af67e9, #6666e8);
+    background:linear-gradient(to bottom,#af67e9, #6666e8);
 }
 .container {
     width:70%;
     height: 80vh;
     outline: green solid 2px; 
-    margin: 3.5em auto;
-    
+    margin: 3.7em auto; 
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+.container div{
+    width: 49.9%;
+    height: 100%;
+    outline: blue solid 4px; 
+    background-color: white;
+}
+.container :nth-child(odd){
+    /* background-color: aqua; */
+    background:url("./images/bg-pattern-desktop.svg"), url("./images/illustration-woman-online-desktop.svg") ;
+    background-clip: border-box, border-box;
+    background-size: 50 40em, 10em 10em;
+    background-position: -36em -17em,-5em 5em;
+    background-repeat: no-repeat,no-repeat;
 }
