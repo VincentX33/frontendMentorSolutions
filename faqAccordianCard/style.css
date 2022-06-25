@@ -17,17 +17,31 @@ body {
     justify-content: space-between;
     background-color: aliceblue;
 }
-.container div{
+.container > div{
     width: 49.9%;
     height: 100%;
     outline: blue solid 4px; 
     background-color: white;
+    position: relative;
+    left: 0;
+    top: 0;
 }
-.container :nth-child(odd){
+/* .container :nth-child(odd){ */
+.leftCont {
     /* background-color: aqua; */
     background:url("./images/bg-pattern-desktop.svg"), url("./images/illustration-woman-online-desktop.svg") ;
     background-clip: border-box, border-box;
     background-size: 50 40em, 10em 10em;
     background-position: -36em -17em,-5em 5em;
     background-repeat: no-repeat,no-repeat;
+}
+.AtTheRate {
+    width: 150px;
+    height: 150px;
+    transform: scale(1.3);
+    padding: 0;
+    position: absolute;
+    bottom: 7.4em;
+    left: -4.3em;
+    background-image: none;
 }
